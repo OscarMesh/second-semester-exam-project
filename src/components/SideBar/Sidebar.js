@@ -17,7 +17,7 @@ const SideBar = () => {
                 return (
                   <NavLink
                     style={({ isActive }) => ({
-                      color: isActive ? "#f59e19" : "",
+                      color: isActive ? "#072f5f" : "",
                     })}
                     key={index}
                     className="menu-item"
