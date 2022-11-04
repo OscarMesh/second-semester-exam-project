@@ -1,0 +1,97 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  justify-content: center;
+  height: 100vh;
+}
+.home .home-content {
+  background: #fcf6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 1041px;
+  padding-left: 147px;
+  padding-right: 147px;
+}
+
+.home .home-content h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #072f5f;
+  margin-bottom: 46px;
+}
+.home .home-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 700px;
+  text-align: center;
+  color: #0f0b23;
+}
+.home .home-content .animation {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 47px;
+}
+.home .home-content p span,
+.home .home-content h1 span {
+  font-weight: 600;
+  /* color: #f59e19; */
+}
+@media screen and (max-width: 1024px) {
+  .home .home-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home .home-content h1 {
+    font-size: 28px;
+  }
+  .home .home-content p {
+    font-size: 20px;
+  }
+  .home .home-content .animation {
+    max-width: 200px;
+    max-height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home .home-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home .home-content h1 {
+    font-size: 28px;
+  }
+  .home .home-content p {
+    font-size: 20px;
+  }
+  .home .home-content .animation {
+    max-width: 200px;
+    max-height: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home {
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+  }
+  .home .home-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home .home-content h1 {
+    font-size: 24px;
+  }
+  .home .home-content p {
+    font-size: 16px;
+  }
+  .home .home-content .animation {
+    max-width: 116px;
+    max-height: 180px;
+  }
+}

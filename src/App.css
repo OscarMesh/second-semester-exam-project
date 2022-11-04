@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* background: #15161b; */
+}
+
+body {
+  padding: 36px;
+  background: #ffffff;
+  /* color: #fff; */
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+   body {
+    padding: 2rem;
+    background: #fcf6f8;
+  } 
+}
+@media screen and (max-width: 550px) {
+  body {
+    padding: 0;
+    background: #fcf6f8;
+  }
+}
