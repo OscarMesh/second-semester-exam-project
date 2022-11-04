@@ -33,50 +33,48 @@ const SideBar = () => {
         </div>
       </div>
       <div className="toggle-menu">
-          {toggleMenu ? (
-            <Icon
-              icon="eva:close-outline"
-              color="#000000"
-              width={30}
-              height={30}
-              onClick={() => setToggleMenu(false)}
-            />
-          ) : (
-            <Icon
-              icon="ant-design:menu-outlined"
-              width={30}
-              height={30}
-              color="#000000"
-              onClick={() => setToggleMenu(true)}
-            />
-          )}
-         
+        {toggleMenu ? (
+          <Icon
+            icon="eva:close-outline"
+            color="#000000"
+            width={30}
+            height={30}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <Icon
+            icon="ant-design:menu-outlined"
+            width={30}
+            height={30}
+            color="#000000"
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
 
-          {toggleMenu && (
-            <div className="sidebar-menu">
-              <ul>
-                <li>
-                  {SideBarData.map((item, index) => {
-                    return (
-                      <NavLink
-                        style={({ isActive }) => ({
-                          color: isActive ? "#072f5f" : "",
-                        })}
-                        key={index}
-                        className="menu-item"
-                        to={item.path}
-                      >
-                        {item.icons}
-                        <span> {item.title} </span>
-                      </NavLink>
-                    );
-                  })}
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-      
+        {toggleMenu && (
+          <div className="sidebar-menu scale-up-center">
+            <ul>
+              <li>
+                {SideBarData.map((item, index) => {
+                  return (
+                    <NavLink
+                      style={({ isActive }) => ({
+                        color: isActive ? "#072f5f" : "",
+                      })}
+                      key={index}
+                      className="menu-item"
+                      to={item.path}
+                    >
+                      {item.icons}
+                      <span> {item.title} </span>
+                    </NavLink>
+                  );
+                })}
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </>
   );
 };
