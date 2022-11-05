@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Repos from "../../pages/Repos/Repos";
+
+import moment from "moment";
 import "./Card.css";
 
 const Card = ({ repos }) => {
   return (
     <>
       {repos.map((item) => {
+        let date = moment(item.created_at).format("MMMM Do YYYY, h:mm:ss a");
         return (
           <div className="card" key={item.id}>
             <div className="head">
@@ -19,7 +21,7 @@ const Card = ({ repos }) => {
                 <p>{item.name}</p>
               </span>
             </div>
-            <p>The repository was created on 20th June 2022 by OscarMesh </p>
+            <p>The repository was created on {date} by OscarMesh </p>
             <Link to="/">
               <span>View Repo</span>
             </Link>

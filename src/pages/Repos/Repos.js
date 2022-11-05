@@ -8,8 +8,8 @@ import Card from "../../components/Card/Card";
 const Repos = () => {
   const [repos, setRepos] = useState([]);
   const [currentPage, setcurrentPage] = useState(1);
-  const [itemsPerPage, setitemsPerPage] = useState(4);
-  const [pageNumberLimit, setpageNumberLimit] = useState(4);
+  const [itemsPerPage] = useState(4);
+  const [pageNumberLimit] = useState(4);
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(4);
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
 
@@ -57,7 +57,6 @@ const Repos = () => {
 
   const handleNextbtn = () => {
     setcurrentPage(currentPage + 1);
-
     if (currentPage + 1 > maxPageNumberLimit) {
       setmaxPageNumberLimit(maxPageNumberLimit + pageNumberLimit);
       setminPageNumberLimit(minPageNumberLimit + pageNumberLimit);
@@ -66,8 +65,7 @@ const Repos = () => {
 
   const handlePrevbtn = () => {
     setcurrentPage(currentPage - 1);
-
-    if ((currentPage - 1) % pageNumberLimit == 0) {
+    if ((currentPage - 1) % pageNumberLimit == 1) {
       setmaxPageNumberLimit(maxPageNumberLimit - pageNumberLimit);
       setminPageNumberLimit(minPageNumberLimit - pageNumberLimit);
     }

@@ -25,7 +25,7 @@ const Home = () => {
           Semester. <span> Enjoy!!! </span>
         </p>
         <div className="animation">
-          <Lottie options={defaultOptions} />
+          <Lottie options={defaultOptions} background="#fff"/>
         </div>
       </div>
     </div>
