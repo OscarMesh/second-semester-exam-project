@@ -8,8 +8,12 @@
 
 body {
   padding: 36px;
-  background: #ffffff;
+  background-color: #011b3b;
   /* color: #fff; */
+  background-image: url("../src/assets/Ornament.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 @-webkit-keyframes scale-up-center {
   0% {
@@ -46,12 +50,12 @@ ul li {
 @media screen and (max-width: 768px) {
   body {
     padding: 2rem;
-    background: #fcf6f8;
+    background: #ffffff;
   }
 }
 @media screen and (max-width: 550px) {
   body {
     padding: 0;
-    background: #fcf6f8;
+    background: #ffffff;
   }
 }
