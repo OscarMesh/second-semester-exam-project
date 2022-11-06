@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import moment from "moment";
 import "./Card.css";
@@ -29,9 +29,6 @@ const Card = ({ repos }) => {
               <p> {item.watchers_count}</p>
             </div>
             <p>The repository was created on {date} by OscarMesh </p>
-            <Link to="/repo" target="blank">
-              <span>View Repo</span>
-            </Link>
             <a href={item.html_url} target="blank">
               <span>
                 View Repo on GitHub{" "}
