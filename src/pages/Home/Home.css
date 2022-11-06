@@ -29,13 +29,13 @@
   font-weight: 400;
   font-size: 24px;
   max-width: 700px;
-  text-align: center;
+  text-align: justify;
   color: #0f0b23;
 }
 .home .home-content .animation {
-  max-width: 300px;
-  max-height: 300px;
-  margin-top: 47px;
+  max-width: 400px;
+  max-height: 400px;
+  /* margin-top: 40px; */
 }
 .home .home-content p span,
 .home .home-content h1 span {
@@ -53,10 +53,6 @@
   .home .home-content p {
     font-size: 20px;
   }
-  .home .home-content .animation {
-    max-width: 200px;
-    max-height: 250px;
-  }
 }
 @media screen and (max-width: 768px) {
   .home .home-content {
@@ -71,8 +67,8 @@
     font-size: 20px;
   }
   .home .home-content .animation {
-    max-width: 200px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -90,9 +86,10 @@
   }
   .home .home-content p {
     font-size: 16px;
+    max-width: 300px;
   }
   .home .home-content .animation {
-    max-width: 116px;
-    max-height: 180px;
+    max-width: 300px;
+    max-height: 300px;
   }
 }

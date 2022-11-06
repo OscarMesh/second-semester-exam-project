@@ -10,10 +10,7 @@ body {
   padding: 36px;
   background-color: #011b3b;
   /* color: #fff; */
-  background-image: url("../src/assets/Ornament.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+
 }
 @-webkit-keyframes scale-up-center {
   0% {
@@ -46,6 +43,25 @@ a {
 }
 ul li {
   list-style: none;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+}
+.errorBoundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.errorAnime {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+  height: 300px;
+ 
 }
 @media screen and (max-width: 768px) {
   body {
