@@ -2,14 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   flex-direction: column;
 }
-.loader h1  {
-  color: #072f5f;;
+.loader h1 {
+  color: #072f5f;
 }
 
 .loader .loaderImage {
   max-width: 300px;
+  max-height: 300px;
   width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .loader {
+    margin-top: 20px;
+  }
+  .loader .loaderImage {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
