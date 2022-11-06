@@ -21,6 +21,13 @@ const Card = ({ repos }) => {
                 <p>{item.name}</p>
               </span>
             </div>
+            <div className="stars">
+              <span>Stars:</span>
+              <p> {item.stargazers_count}</p>
+
+              <span>Watchers:</span>
+              <p> {item.watchers_count}</p>
+            </div>
             <p>The repository was created on {date} by OscarMesh </p>
             <Link to="/repo" target="blank">
               <span>View Repo</span>

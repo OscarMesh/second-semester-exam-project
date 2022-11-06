@@ -132,7 +132,7 @@ const Repos = () => {
             </>
           ) : (
             <>
-              <div className="repoList">
+              <div className="repoList scale-up-center ">
                 <Card repos={currentItems} />
               </div>
               <ul className="pageNumbers">
