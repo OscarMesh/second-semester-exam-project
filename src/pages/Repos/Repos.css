@@ -20,8 +20,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 148px;
+  /* position: fixed; */
 }
 
 .repos .content .header span {
@@ -115,7 +116,7 @@
   .repos .content {
     justify-content: center;
     /* align-items: center; */
-      padding: 1rem;
+    padding: 1rem;
   }
   .repos .content .header {
     flex-direction: column;
