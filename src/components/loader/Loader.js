@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loader.css"
+import "./Loader.css";
 import Lottie from "react-lottie";
 import loading from "../../assets/99274-loading.json";
 
@@ -13,12 +13,11 @@ const Loader = () => {
     },
   };
   return (
-
     <div className="loader">
-        <div className="loaderImage">
-
-      <Lottie options={defaultOptions} />
-        </div>
+      <h1>Loading...</h1>
+      <div className="loaderImage">
+        <Lottie options={defaultOptions} />
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Repos.css";
 import { Icon } from "@iconify/react";
 import axios from "axios";
@@ -19,12 +19,12 @@ const Repos = () => {
 
   // search query
   const handleQuery = (e) => {
-    setQuery(e.target.value);
+    setQuery(e.target.value.toLowerCase());
   };
 
-  const search = (repos) => {
-    return repos.filter((item) => item.name.toLowerCase().includes(query));
-  };
+  const search = repos.filter((item) => {
+    return item.name.toLowerCase().includes(query);
+  });
 
   // button click to nex or prev page
   const handleClick = (event) => {
@@ -40,7 +40,7 @@ const Repos = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = repos.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = search.slice(indexOfFirstItem, indexOfLastItem);
 
   const renderPageNumbers = pages.map((number) => {
     if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
@@ -133,7 +133,7 @@ const Repos = () => {
           ) : (
             <>
               <div className="repoList">
-                <Card repos={search(currentItems)} />
+                <Card repos={currentItems} />
               </div>
               <ul className="pageNumbers">
                 <li>

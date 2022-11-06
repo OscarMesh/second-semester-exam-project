@@ -3,7 +3,7 @@
   flex-direction: row;
   gap: 36px;
   justify-content: center;
-  /* max-height: 100vh; */
+  min-height: 100vh;
   height: 100%;
   width: 100%;
 }
@@ -115,12 +115,13 @@
   .repos .content {
     justify-content: center;
     /* align-items: center; */
+      padding: 1rem;
   }
   .repos .content .header {
     flex-direction: column;
     justify-content: end;
     gap: 20px;
-    margin-top: 15px;
+    margin-top: 40px;
     align-items: flex-end;
   }
   .repos .content .header span h2 {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Icon } from "@iconify/react";
 import moment from "moment";
 import "./Card.css";
 
@@ -22,9 +22,15 @@ const Card = ({ repos }) => {
               </span>
             </div>
             <p>The repository was created on {date} by OscarMesh </p>
-            <Link to="/">
+            <Link to="/repo" target="blank">
               <span>View Repo</span>
             </Link>
+            <a href={item.html_url} target="blank">
+              <span>
+                View Repo on GitHub{" "}
+                <Icon icon="ion:logo-github" color="#A6A6A6" />
+              </span>
+            </a>
           </div>
         );
       })}

@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 21px 31px;
   background: #ffffff;
-  box-shadow: 22px 22px 22px  rgba(29, 29, 29, 0.1);
+  box-shadow: 22px 22px 22px rgba(29, 29, 29, 0.1);
   border-radius: 5px;
   max-width: 406px;
   gap: 30px;
@@ -20,7 +20,6 @@
   height: 80px;
   background: #d9d9d9;
   border-radius: 50%;
-  
 }
 
 .card .head span {
@@ -28,6 +27,7 @@
   flex-direction: column;
   gap: 10px;
   max-width: 200px;
+  cursor: pointer;
 }
 
 .card .head span h3 {
@@ -47,4 +47,10 @@
   font-size: 16px;
   color: #072f5f;
   cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    max-width: 308.2px;
+  }
 }

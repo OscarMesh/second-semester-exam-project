@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+}
+.loader h1  {
+  color: #072f5f;;
 }
 
 .loader .loaderImage {
