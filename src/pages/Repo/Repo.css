@@ -1,0 +1,89 @@
+.repo {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+.repo .content {
+  padding: 37px 50px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  max-width: 1041px;
+  width: 100%;
+}
+.repo .content .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 148px;
+}
+
+.repo .content .header span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.repo .content .header span h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #072f5f;
+}
+.repo .content .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+.repo .content .body span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #072f5f;
+}
+.repo .content .body p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.repo .content .body .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.repo .content .body .head .name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.repo .content .body .stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.repo .content .body .desc {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 500px;
+  margin-top: 10px;
+  text-align: justify;
+}
+@media screen and (max-width: 550px) {
+  .repo .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 12px;
+  }
+}

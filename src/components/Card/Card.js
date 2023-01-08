@@ -3,12 +3,14 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import moment from "moment";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 const Card = ({ repos }) => {
   return (
     <>
       {repos.map((item) => {
         let date = moment(item.created_at).format("MMMM Do YYYY, h:mm:ss a");
+        const repoName = item.name;
         return (
           <div className="card" key={item.id}>
             <div className="head">
@@ -29,12 +31,12 @@ const Card = ({ repos }) => {
               <p> {item.watchers_count}</p>
             </div>
             <p>The repository was created on {date} by OscarMesh </p>
-            <a href={item.html_url} target="blank">
+            <Link to={`/repos/${repoName}`}>
               <span>
-                View Repo on GitHub{" "}
+                View Repo
                 <Icon icon="ion:logo-github" color="#A6A6A6" />
               </span>
-            </a>
+            </Link>
           </div>
         );
       })}

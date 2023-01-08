@@ -13,4 +13,10 @@ export const SideBarData = [
     icons: <Icon icon="mdi:source-repository" width={24} height={24} />,
     cName: "menu-item",
   },
+  {
+    title: " Error Page",
+    path: "*",
+    icons: <Icon icon="mdi:error" width={24} height={24} color="red" />,
+    cName: "menu-item",
+  },
 ];
